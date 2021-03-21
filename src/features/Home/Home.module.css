@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.main {
+    background: bottom url(./sky.jpg);
+    background-size: cover;
+    height: 70vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #2b6e89;
+    text-align: center;
+    padding-top: 10px;;
+    animation: fadeIn ease-out 5s;
+}
+
+body {
+    background: black;
+}
+
+h2 {
+    color: #392b89;
+}
+
+.header {
+    padding-top: 60vh;
+    animation: slideUp ease-out 3s;
+    margin-bottom: 50px;
+}
+
+.boxes {
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #2b6e89;
+    color: gold;
+    animation: colorSwap linear 5s;
+}
+
+.boxContainer {
+    display: flex;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        padding-top: 100vh;
+    }
+    100% {
+        padding-top: 60vh;
+    }
+}
+
+
+@keyframes colorSwap {
+    0% {
+        color: black;
+        background-color: black;
+    }
+    30% {
+        color: black;
+        background-color: black;
+    }
+    60% {
+        color: 	#FAFAD2;
+    }
+   100% {
+       color: gold;
+   }
+}
